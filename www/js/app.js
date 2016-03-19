@@ -33,22 +33,29 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   })
 
   .state('app.search', {
-    url: '/search',
+    url: '/add',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/add.html'
       }
     }
   })
-
-  .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
+  .state('app.request', {
+    url: '/request',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/request.html'
       }
-    })
+    }
+  })
+    .state('app.volunteer', {
+    url: '/volunteer',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/volunteer.html'
+      }
+    }
+  })
     .state('app.playlists', {
       url: '/home',
       views: {
