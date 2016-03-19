@@ -1,5 +1,26 @@
-<ion-view view-title="Volunteer">
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Apply As a Volunteer</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
   <ion-content>
-    <h1>Volunteer</h1>
+    <form ng-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input">
+        <span class="input-label">Email</span>
+          <input type="text" ng-model="loginData.email">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="loginData.password">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Apply</button>
+        </label>
+      </div>
+    </form>
   </ion-content>
-</ion-view>
+</ion-modal-view>
